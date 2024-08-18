@@ -3,14 +3,14 @@ const Hero = () => {
     <div
       className="h-screen pt-[4rem]"
       style={{
-        backgroundImage: "url('../src/assets/image/clip.png')",
+        backgroundImage: "https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939713/clip_qghkt5.png",
         backgroundRepeat: "no-repeat",
       }}
     >
       <div
         className="flex md:flex-row   flex-col gap-8 md:gap-[5rem] md:px-32  h-full items-center md:justify-between"
         style={{
-          backgroundImage: "url('../src/assets/image/OBJECTS.png')",
+          backgroundImage: "https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939712/OBJECTS_rdj5n7.png",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
         <div 
           style={{
-            backgroundImage: "url('../src/assets/image/Group.png')",
+            backgroundImage: "https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939712/Group_fk1uaj.png",
             backgroundSize: "15rem 10rem ",
             backgroundPosition: "bottom",
             backgroundRepeat: "no-repeat",
@@ -40,7 +40,7 @@ const Hero = () => {
         >
           <img
             className="h-[19rem] lg:h-[22rem] mb-8 "
-            src="../src/assets/image/pic.png"
+            src="https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939712/pic_xuyfyd.png"
             alt=""
           />
         </div>
