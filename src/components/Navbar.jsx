@@ -13,7 +13,7 @@ const navToggle=()=>{
   return (
     <div>
       <div className="flex w-full  bg-[#FDFBF4] fixed justify-between md:mr-[6rem] ">
-        <img className="mt-2" src="../src/assets/image/logo.png" alt="" />
+        <img className="mt-2" src="https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939712/pic_xuyfyd.png" alt="" />
         <div className=" hidden font-acme md:flex mt-3 *:font-semibold  gap-8 mr-[1rem]">
           <a href="">About</a>
           <a href="">Programs</a>
