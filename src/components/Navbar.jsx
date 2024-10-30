@@ -9,22 +9,22 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className="flex w-full  bg-[#FDFBF4] fixed justify-between md:mr-[6rem] ">
+    <div className="w-full fixed bg-[#FDFBF4] ">
+      <div className="flex  max-w-[1280px]  justify-between items-center mx-auto ">
         <img
           className="mt-2"
           src="https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939712/logo_wyzjgn.png"
           alt=""
         />
-        <div className=" hidden font-acme md:flex mt-3 *:font-semibold  gap-8 mr-[1rem]">
+        <div className=" hidden font-acme lg:flex mt-3 *:font-semibold  gap-8 mr-[1rem]">
           <a href="">About</a>
           <a href="">Programs</a>
           <a href="">Contacts</a>
         </div>
 
-        <div className="md:hidden" onClick={navToggle}>
+        <div className="lg:hidden" onClick={navToggle}>
           <button
-            className={`z-40 mt-3 mr-6 block hamburger md:hidden  focus:outline-none ${
+            className={`z-40 mt-3 mr-6 block hamburger lg:hidden  focus:outline-none ${
               menuOpen ? "open" : ""
             }`}
           >
