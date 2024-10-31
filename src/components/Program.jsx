@@ -41,7 +41,7 @@ const program = [
 const Program = () => {
   return (
     <div className="w-full bg-gradient-to-bl from-[#F9F8EC] to-[#FAF2F4] px-8  h-full mb-4 pb-9 ">
-        <div className="max-w-[1280px] justify-center items-center flex flex-col pt-[3rem]">
+        <div className="max-w-[1280px] justify-center items-center flex flex-col pt-[3rem] mx-auto">
             <h1 className="font-bold font-space text-[25px] text-center  md:text-[39px]">Here’s a preview of our programs</h1>
             <div  className="grid gap-[3.9rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8">
             {

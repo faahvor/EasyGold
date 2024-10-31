@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className="bg-gradient-to-bl from-[#F9F8EC] to-[#FAF2F4] py-10 px-6 font-space">
-      <div className="max-w-7xl mx-[7rem]  gap-8 text-[#1B4555] flex flex-col lg:flex-row  justify-between items-center  ">
+      <div className="max-w-7xl   gap-8 text-[#1B4555] flex flex-col lg:flex-row  justify-between items-center mx-auto  ">
         
         {/* Left Section - About */}
         <div className='flex flex-col items-center lg:items-start'>

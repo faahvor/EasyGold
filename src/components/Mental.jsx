@@ -31,7 +31,7 @@ const articles = [
 const Mental = () => {
   return (
     <div className="w-full h-full bg-gradient-to-bl from-[#F9F8EC] to-[#FAF2F4] px-8  ">
-<div className="max-w-[1280px] flex flex-col justify-between items-center">
+<div className="max-w-[1280px] flex flex-col justify-between items-center mx-auto">
 <h1 className="md:text-[39px] text-[25px] font-bold font-space lg:w-[774px] text-center ">Insights, Tips, and Stories for Better Mental Health</h1>
 <p className="lg:w-[782px] text-[12px] md:text-[18px] font-normal text-center font-space">Stay informed and inspired with our latest articles and updates. Our blog features expert advice, personal stories, and practical tips to support your mental well-being.</p>
 <div className="grid gap-[2.5rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[2.5rem]">
