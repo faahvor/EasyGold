@@ -1,25 +1,23 @@
-import About from "./components/About"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Mental from "./components/Mental"
-import Navbar from "./components/Navbar"
-import Program from "./components/Program"
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About_us from "./pages/About_Us";
+import Home from "./pages/Home";
+import Programs from "./pages/Programs";
+import Contacts from "./pages/Contacts";
 
 function App() {
-
-
   return (
-  <div>
-    <div className="bg-[#FDFBF4]">
-    <Navbar/>
-    <Hero />
-    <About/>
-    <Program/>
-    <Mental/>
-    <Footer/>
+    <div className="min-h-screen">
+      {/* Place Navbar outside of Routes to make it general */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About_us />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/contacts" element={<Contacts/>} />
+      </Routes>
     </div>
-  </div>
-  )
+  );
 }
 
-export default App
+export default App;

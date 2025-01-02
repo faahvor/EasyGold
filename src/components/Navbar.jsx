@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../index.css";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full fixed bg-[#FDFBF4]">
+    <div className="w-full fixed bg-transparent z-50">
       <div className="flex max-w-[1280px] justify-between items-center mx-auto">
         <img
           className="mt-2"
@@ -17,9 +17,30 @@ const Navbar = () => {
           alt=""
         />
         <div className="hidden font-acme lg:flex mt-3 *:font-semibold gap-8 mr-[1rem]">
-          <a href="">About</a>
-          <a href="">Programs</a>
-          <a href="">Contacts</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/programs"
+            className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+          >
+            Programs
+          </NavLink>
+          <NavLink
+            to="/contacts"
+            className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+          >
+            Contacts
+          </NavLink>
         </div>
 
         <div className="lg:hidden" onClick={navToggle}>
@@ -46,11 +67,30 @@ const Navbar = () => {
           src="https://res.cloudinary.com/dsjsvmug6/image/upload/v1723939712/logo_wyzjgn.png"
           alt=""
         />
-        <a className=" hover:text-[#E46924]" href="">
-        Home
-        </a>
-        <a className=" hover:text-[#E46924]"  href="">About</a>
-        <a className=" hover:text-[#E46924]"  href="">Contacts</a>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          to="/programs"
+          className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+        >
+          Programs
+        </NavLink>
+        <NavLink
+          to="/contacts"
+          className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
+        >
+          Contacts
+        </NavLink>
       </div>
 
       {/* Overlay */}
