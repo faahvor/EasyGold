@@ -29,12 +29,12 @@ const Navbar = () => {
           >
             About Us
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/programs"
             className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
           >
             Programs
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/contacts"
             className={({ isActive }) => (isActive ? "text-[#E46924]" : "")}
